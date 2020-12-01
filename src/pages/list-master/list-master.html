@@ -1,0 +1,170 @@
+<ion-header>
+  <ion-toolbar>
+    
+    <ion-title>Acceuil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div>
+    <ion-slides (ionSlideDidChange)="slideChanged()" autoplay="1000" loop="true" speed="500" pager>
+    <ion-slide *ngFor="let image of imageContainer">
+       <img src="{{ image.url }}">
+     </ion-slide>
+  </ion-slides>
+  </div>
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div>
+          <ion-card>
+            <img src="./assets/img/advance-card-bttf.png"/>
+            <div class="card-title">Madison</div>
+            <div class="card-subtitle">28 Listings</div>
+          </ion-card>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          <ion-card>
+            <img src="./assets/img/advance-card-bttf.png"/>
+            <div class="card-title">Madison</div>
+            <div class="card-subtitle">28 Listings</div>
+          </ion-card>
+        </div>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+
+  <h1 style="text-align:center;">Top articles</h1>
+  <ion-list>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item>
+    <ion-item>
+      <ion-thumbnail item-start>
+        <img src="./assets/img/thumbnail-totoro.png">
+      </ion-thumbnail>
+      <h2>My Neighbor Totoro</h2>
+      <p>Hayao Miyazaki • 1988</p>
+      <button ion-button clear item-end>View</button>
+    </ion-item> 
+  </ion-list>
+  
+  <div>
+    <h1 style="text-align:center;">Top Audio</h1>
+  <ion-slides (ionSlideDidChange)="slideChanged()" autoplay="1000" loop="true" speed="500" pager>
+    <ion-slide >
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      
+     </ion-slide>
+     <ion-slide >
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      
+     </ion-slide>
+     <ion-slide >
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-totoro.png">
+        </ion-thumbnail>
+        <h2>My Neighbor Totoro</h2>
+        <p>Hayao Miyazaki • 1988</p>
+        <button ion-button clear item-end>View</button>
+      </ion-item>
+      
+     </ion-slide>
+  </ion-slides>
+</div>
+  <h1 style="text-align:center;">Ebooks</h1>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div> <img src="./assets/img/advance-card-bttf.png"/></div>
+      </ion-col>
+      <ion-col>
+        <div> <img src="./assets/img/advance-card-bttf.png"/></div>
+      </ion-col>
+      
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <div> <img src="./assets/img/advance-card-bttf.png"/></div>
+      </ion-col>
+      <ion-col>
+        <div> <img src="./assets/img/advance-card-bttf.png"/></div>
+      </ion-col>
+      
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="arrow-dropleft"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+ 
+</ion-content>
